@@ -57,9 +57,14 @@ li a:hover {
 }
 
 #logo {
-    height: 6em;
+    height: 3em;
     width: auto;    
 }
+
+
+/* .logo img:hover {
+    
+} */
 
 .banner {
     padding: 2em;
@@ -91,7 +96,7 @@ li a:hover {
    
 }
 
-.image-gallery {
+/* .image-gallery {
     display: flex;
     justify-content: flex-start;
     flex-wrap: nowrap;
@@ -99,19 +104,54 @@ li a:hover {
     background-color: #EF5B5B;
     height: 40em;
     overflow-y: hidden;
-    overflow-x: hidden;
-    max-width: 100vw;
+    overflow-x: scroll;
+    width: 100%;
 }
-.image-gallery h3 {
+.image-gallery h3{
+    justify-content: flex-start;
+    padding-top: 4em;
     font-size: 2em;
     color: white;
+    max-width: 100%;
 }
-.image-gallery img {
-    height: 25em;
-    max-width: 30em;
+.img-container {
+    align-items: center;
+    max-height: 40vh;
+    max-width: 30vw;
+    margin: 2em;
+    padding: 10em;
+}
+
+.img {
     object-fit: cover;
     border-radius: 8px;
-    margin: 2em;
+}
+ */
+
+.image-gallery {
+    display: inline-flex;
+    background-color: #EF5B5B;
+    justify-content: space-evenly;
+}
+
+.img-container {
+    width: 300px;
+    margin-left: 2em;
+}
+
+
+.img img {
+    object-fit: cover;
+    width: 20em;
+    height: 15em;
+    border-radius: 8px;
+    float: right;
+}
+
+.img h3 {
+    color: white;
+    font-size: 2.5em;
+
 }
 
 
@@ -162,9 +202,36 @@ li a:hover {
 .hero h1 {
     color: white;
     background-color: transparent;
+    margin-left: 1em;
+    max=width: 100%;
 }
 
+.testimonial {
+    height: em;
+    background-color: #23001E;
+
+}
+
+.testimonial h3 {
+    font-size: 2em;
+    font-style: italic;
+    font-weight: 100;
+    color: white;
+    justify-content: flex-start;
+    padding-left: 1.5em;
+}
+
+.testimonial h4 {
+    font-weight: 600;
+    font-size: 2.6em;
+    color: white;
+    padding-right: 4em;
+    text-align: right;
+}
+
+
 .footer {
+    margin: 1px;
     background-color: #20a39e;
     color: white;
     font-size: 2em;
